@@ -1,0 +1,472 @@
+<html lang="en"> 
+<head> 
+    <meta charset="utf-8" />
+    <!-- IE Compatablity meta --> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Compatability meta--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title> BootStrap </title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  
+    
+
+    
+        <!-- to make IE understand html5 --> 
+    <!--[if it IE 9]> 
+        <script src="js/html5shiv.min.js"></script>
+        
+        <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+    <body> 
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+        
+         <!-- Starting our Navbar --> 
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <!-- class navbar -fixed-top make navbar always on top at scrolling --> 
+            
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    
+      <div class="navbar-header">
+      
+          <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#ournavbar" >
+        
+              <span class="sr-only">Toggle navigation</span>
+        
+              <span class="icon-bar"></span>
+        
+              <span class="icon-bar"></span>
+        
+              <span class="icon-bar"></span>
+      </button>
+     
+          <a class="navbar-brand" href="#">PlayerBio.com    </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="ournavbar">
+      
+        <ul class="nav navbar-nav navbar-right">
+        
+            <li class="active"><a href="#">Active Link <span class="sr-only">(current)</span></a></li>
+        
+            <li><a href="#">Normal Link</a></li>
+        
+            <li class="dropdown">
+          
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Dropdown Link <span class="caret"></span></a>
+          
+                <ul class="dropdown-menu">
+            
+                    <li><a href="#">Action</a></li>
+            
+                    <li><a href="#">Another action</a></li>
+            
+                    <li><a href="#">Something else here</a></li>
+            
+                    <li role="separator" class="divider"></li>
+            
+                    <li><a href="#">Separated link</a></li>
+            
+                    
+                </ul>
+        </li>
+    
+        </ul>
+      <!-- Search bar 
+        <form class="navbar-form navbar-left">
+        
+            <div class="form-group">
+          
+                <input type="text" class="form-control" placeholder="Search">
+            
+            </div>
+        
+            <button type="submit" class="btn btn-default">Submit</button>
+      
+        </form>
+
+     -->
+      </div><!-- /.navbar-collapse -->
+  
+            </div><!-- End of Container -->
+
+        </nav>
+    
+        <!-- End our Navbar --> 
+       
+        <!-- Start carousal --> 
+        <div id="myslide" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators hidden-xs">
+    <li data-target="#myslide" data-slide-to="0" class="active"></li>
+    <li data-target="#myslide" data-slide-to="1"></li>
+    <li data-target="#myslide" data-slide-to="2"></li>
+    <li data-target="#myslide" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="Images/neymar.jpg" alt="Nymar">
+      <div class="carousel-caption hidden-xs">
+     <h1>Neymar Jr</h1> 
+          <p>Neymar da Silva Santos Júnior (Portuguese pronunciation: [ born 5 February 1992), commonly known as Neymar or Neymar Jr., is a Brazilian professional footballer who plays as a forward for French club Paris Saint-Germain and the Brazil national team.</p>
+           <a href="https://en.wikipedia.org/wiki/Neymar" target="_blank"><div class="btn btn-danger"> Wiki Neymar  </div></a> 
+      </div>
+    </div>
+    <div class="item">
+      <img src="Images/messi.png" alt="messi">
+      <div class="carousel-caption">
+        <h1>Messi</h1>
+          <p> Lionel Andrés "Leo" Messi (Spanish pronunciation:   born 24 June 1987) is an Argentine professional footballer who plays as a forward for Spanish club FC Barcelona and the Argentina national team. Often considered the best player in the world and regarded by many as the greatest of all time</p>
+           <a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank"><div class="btn btn-danger"> Wiki Messi </div></a> 
+      </div>
+    </div>
+      <div class="item">
+      <img src="Images/dybala.png" alt="Dybala">
+      <div class="carousel-caption">
+       <h1>Dybala</h1>
+          <p> Paulo Bruno Exequiel Dybala (Spanish pronunciation: born 15 November 1993) is an Argentine professional footballer who plays as a forward for Italian club Juventus and the Argentina national team.
+After beginning his career in Argentina with Instituto de Córdoba in 2011, he moved to Italian club Palermo in 2012</p>
+          <a href="https://en.wikipedia.org/wiki/Paulo_Dybala" target="_blank"><div class="btn btn-danger"> Wiki Dybala </div></a> 
+      </div>
+    </div>
+      <div class="item">
+      <img src="Images/kaka.jpg" alt="kaka">
+      <div class="carousel-caption">
+     <h1>Kaka</h1>
+          <p> Ricardo Izecson dos Santos Leite (Portuguese pronunciation:  born 22 April 1982), commonly known as Kaká or Ricardo Kaká is a Brazilian professional footballer who plays as an attacking midfielder for Orlando City in Major League Soccer and the Brazil national team.</p>
+           <a href="https://en.wikipedia.org/wiki/Kaká" target="_blank"><div class="btn btn-danger"> Wiki Kaka </div></a> 
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myslide" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myslide" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+     <!--end Carousal -->    
+        
+        <!-- start Section About -->
+        <section class="about text-center" > 
+        <h1> Meet our new templete <span> PlayerBio </span></h1>
+        <p class="lead"> Hello let me introduce my new Template created by <strong>MK14</strong>  </p>
+        </section>
+         <!-- End Section About -->
+        
+         <!-- Start Section Features  -->
+         
+        <section class="features text-center" > 
+        
+            <div class="container">
+            <h1 > Features</h1>
+                <div class="row"> 
+               <div class="feat" > 
+                    <div class="col-lg-3 col-md-6" > 
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    <h3> 100% Responsive </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="feat" > 
+                    <div class="col-lg-3 col-md-6" > 
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                    <h3> Ratina Ready </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                    </div>
+                    
+                    </div>
+                    <div class="feat" > 
+                    <div class="col-lg-3 col-md-6" > 
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                    <h3> Awesome display </h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  </p>
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="feat" > 
+                    <div class="col-lg-3 col-md-6" > 
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                    <h3> Well documented </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  </p>
+                    </div>
+                    
+                    </div>
+                
+                </div>
+            </div>
+        
+        </section>
+      <!-- End Section Features  -->   
+        
+         <!-- Start Section Testimonials-->
+        
+        <section class="testimonials text-center"> 
+        <div class="container" >
+            <!-- Start Container --> 
+             <h1> Summary of Our Players </h1>
+            <!-- Start Testimonial Carousal --> 
+                    <div id="testimonials" class="carousel slide" data-ride="carousel">
+  
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner text-center" role="listbox">
+    <div class="item active">
+       
+          <p class="lead">Neymar da Silva Santos Júnior (Portuguese pronunciation: [ born 5 February 1992), commonly known as Neymar or Neymar Jr., is a Brazilian professional footballer who plays as a forward for French club Paris Saint-Germain and the Brazil national team.</p>
+    <span class="lead">Neymar Jr</span>
+      </div>
+    <div class="item">
+      
+     
+          <p class="lead"> Lionel Andrés "Leo" Messi (Spanish pronunciation:   born 24 June 1987) is an Argentine professional footballer who plays as a forward for Spanish club FC Barcelona and the Argentina national team. Often considered the best player in the world and regarded by many as the greatest of all time</p>
+         <span class="lead">Messi</span>
+    </div>
+      <div class="item">
+     
+          <p class="lead"> Paulo Bruno Exequiel Dybala (Spanish pronunciation: born 15 November 1993) is an Argentine professional footballer who plays as a forward for Italian club Juventus and the Argentina national team.
+After beginning his career in Argentina with Instituto de Córdoba in 2011, he moved to Italian club Palermo in 2012</p>
+          <span class="lead">Dybala</span>
+    </div>
+      <div class="item">
+      
+          <p class="lead"> Ricardo Izecson dos Santos Leite (Portuguese pronunciation:  born 22 April 1982), commonly known as Kaká or Ricardo Kaká is a Brazilian professional footballer who plays as an attacking midfielder for Orlando City in Major League Soccer and the Brazil national team.</p>
+     <span class="lead">Kaka</span>
+    </div>
+      
+      <!-- Indicators -->
+  <ol class="carousel-indicators ">
+    <li data-target="#testimonials" data-slide-to="0" class="active">
+      <img src="Images/neymar%20vector.jpg" > 
+      </li>
+    <li data-target="#testimonials" data-slide-to="1">
+      <img src="Images/messivector.jpg"> 
+      </li>
+    <li data-target="#testimonials" data-slide-to="2">
+      <img src="Images/dybalavector.jpg">
+      </li>
+    <li data-target="#testimonials" data-slide-to="3">
+      <img src="Images/kakavector.jpg">
+      </li>
+  </ol>
+   
+  </div>
+
+  <!-- Controls -->
+  
+</div>
+            <!-- end testimonials --> 
+            
+        <!-- End Container --> 
+            </div>
+       
+        </section>
+        
+<!-- start section price table --> 
+        <div class="price_table text-center" > 
+        
+        <div class="container" > 
+            
+            <h1 > Our Amazing prices </h1> 
+            
+            <div class="row"> 
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="price_box"> 
+               <h2 class="text-primary">Neymar</h2> 
+                    
+                    <p class="center-block">150,00 Mill. €</p>
+                    <ul class="list-unstyled"> 
+                    
+                       <li> Born/age: Feb 5, 1992	(25) </li>
+                        <li> Height: 1,75 m </li>
+                        <li> Position: Left Wing</li>
+                        <li> Nationality: Brazil </li>
+                        <li> Foot : Both</li>
+                        
+                    </ul>
+                    
+    <a href="https://www.transfermarkt.com/neymar/profil/spieler/68290" class="btn btn-primary"> Show More  </a>
+                </div>
+                
+                
+                </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="price_box"> 
+                         <h2 class="text-info">Messi</h2> 
+                    
+                    <p class="center-block">120,00 Mill. €</p>
+                    <ul class="list-unstyled"> 
+                    
+                       <li> Born/age: Jun 24, 1987	(30) </li>
+                        <li> Height: 1,70 m </li>
+                        <li> Position: Right Wing</li>
+                        <li> Nationality: Argentina </li>
+                        <li> Foot : Left</li>
+                        
+                    </ul>
+                    
+<a href="https://www.transfermarkt.com/lionel-messi/profil/spieler/28003" class="btn btn-info"> Show More  </a>
+                </div>
+                
+                
+                </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="price_box"> 
+                         <h2 class="text-success">Dybala</h2> 
+                    
+                    <p class="center-block">70,00 Mill. €</p>
+                    <ul class="list-unstyled"> 
+                    
+                       <li> Born/age: Nov 15, 1993	(23) </li>
+                        <li> Height: 1,77 m </li>
+                        <li> Position: Secondary Striker</li>
+                        <li> Nationality: Argentina </li>
+                        <li> Foot : Left</li>
+                        
+                    </ul>
+                    
+                    <a href="https://www.transfermarkt.com/paulo-dybala/profil/spieler/206050" class="btn btn-success"> Show More  </a>
+                </div>
+                
+                
+                </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="price_box"> 
+                        <h2 class="text-danger">Kaka</h2> 
+                    
+                    <p class="center-block">1,50 Mill. €</p>
+                    <ul class="list-unstyled"> 
+                    
+                       <li> Born/age: Apr 22, 1982	(35) </li>
+                        <li> Height: 1,86 m</li>
+                        <li> Position: Attacking Midfield</li>
+                        <li> Nationality: Brazil </li>
+                        <li> Foot : Both</li>
+                        
+                    </ul>
+                    
+                    <a href="https://www.transfermarkt.com/kaka/profil/spieler/3366" class="btn btn-danger"> Show More  </a>
+                </div>
+                
+                
+                </div>
+            
+            
+            
+            </div>
+            
+            </div>
+        
+        
+        </div>
+        
+        <!-- Start our team Section --> 
+        
+        <section class="ourteam"> 
+        
+       
+            <div class="team"> 
+            
+            <div class="container text-center"> 
+                <h1 class="text-center"> Meet Our Awosome Team</h1> 
+                <div class="row"> 
+                <div class="col-md-3 col-sm-6 ">
+                   <div class="Person" > 
+                    <img class="img-circle" src="Images/nemopro.jpg" alt="Neymar" />
+                    <h3> Neymar</h3>
+                       <p> The Brazilian Hope </p>
+                       <a href="https://www.facebook.com/neymarjr/" target="_blank" ><i class="fa fa-facebook fa-2x"></i> </a>
+                       <a href="https://twitter.com/neymarjr" target="_blank"><i class="fa fa-twitter fa-2x"></i> </a>
+                       <a href="https://www.instagram.com/neymarjr/" target="_blank" >   <i class="fa fa-instagram fa-2x"></i></a>
+                       <a href="https://www.youtube.com/user/neymarjr" target="_blank"> <i class="fa fa-youtube fa-2x"></i></a>
+                    </div>
+                     </div>
+                <div class="col-md-3 col-sm-6 ">
+                   <div class="Person"> 
+                    <img class="img-circle" src="Images/messipro.jpg" alt="Messi" /> 
+                    <h3> Messi </h3>
+                    <p> The Player Master</p>
+                    
+                       <a href="https://www.facebook.com/leomessi/" target="_blank" ><i class="fa fa-facebook fa-2x"></i> </a>
+                       <a href="https://twitter.com/messi10stats" target="_blank"><i class="fa fa-twitter fa-2x"></i> </a>
+                       <a href="https://www.instagram.com/neymarjr/" target="_blank" >   <i class="fa fa-instagram fa-2x"></i></a>
+                       <a href="https://www.youtube.com/user/LeoMessi" target="_blank"> <i class="fa fa-youtube fa-2x"></i></a>
+                    
+                    </div>
+                     
+                     </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="Person"> 
+                    <img class="img-circle" src="Images/dybalapro.jpg" alt="Dybala" />
+                    <h3> Dybala </h3>
+                        <p> Juvi Star</p>
+                    
+                        <a href="https://ar-ar.facebook.com/paulodybala/" target="_blank" ><i class="fa fa-facebook fa-2x"></i> </a>
+                       <a href="https://twitter.com/paudybala_jr" target="_blank"><i class="fa fa-twitter fa-2x"></i> </a>
+                       <a href="https://www.instagram.com/paulodybala" target="_blank" >   <i class="fa fa-instagram fa-2x"></i></a>
+                       <a href="https://www.youtube.com/channel/UCJkp4km8s1IQsIlKzchrYBw" target="_blank"> <i class="fa fa-youtube fa-2x"></i></a>
+                    
+                    </div>
+                     
+                     </div>
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="Person"> 
+                    <img class="img-circle" src="Images/kakapro.jpg" alt="kaka" />
+                    <h3> Kaka</h3>
+                    <p> Prince of milan </p>
+                    <a href="https://www.facebook.com/Kaka/" target="_blank" ><i class="fa fa-facebook fa-2x"></i> </a>
+                       <a href="https://twitter.com/kaka" target="_blank"><i class="fa fa-twitter fa-2x"></i> </a>
+                       <a href="https://www.instagram.com/kaka/" target="_blank" >   <i class="fa fa-instagram fa-2x"></i></a>
+                       <a href="https://www.youtube.com/user/ricardokakaoficial" target="_blank"> <i class="fa fa-youtube fa-2x"></i></a>
+                    
+                    </div>
+                     </div>
+                
+                 </div>
+            
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- start section subscribe --> 
+<section class="subscribe text-center"> 
+        <div class="container"> 
+    <h1>  Keep in Touch </h1>
+    <p class="lead"> Sign up for Newletter , Don't worry about spam we hate it too</p>
+    <form class="form-inline"> 
+            
+            <input class="form-control input-lg" type="email" placeholder="Write your email here"/>
+        <button class="btn btn-danger btn-lg"> <i class="fa fa-edit"></i>  Subscribe </button>
+        
+        
+            </form>
+    </div>
+        
+        
+        
+        </section>
+         
+
+        
+        
+    </body>
+</html>
